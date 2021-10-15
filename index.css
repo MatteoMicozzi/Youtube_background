@@ -10,7 +10,7 @@ iframe {
   object-fit: cover;
   z-index: 1
 }
-.youtube {
+.screenFilter {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -21,15 +21,18 @@ iframe {
 h1 {
   color: goldenrod;
   text-shadow: -2px -2px 3px black;
-  font-size: 450%;
+  font-size: 4.5em;
   position: fixed;
   top: 10%;
   left: 15%;
   z-index: 5
 }
 h3 {
+  margin: 0;
+  padding: 0;
   color: beige;
-  font-size: 130%;
+  font-size: 1.3em;
+  line-height: 1.2em;
   position: absolute;
   top: 50%;
   z-index: 5
@@ -47,4 +50,20 @@ h3 {
 }
 element::-webkit-scrollbar {
     display: none;            /* delete scrollbar for Chrome, Safari, and Opera */
+}
+@media(max-width: 991px) {
+  h1 {
+    top: 5%;
+    left: 10%;
+    right: 5%;
+    font-size: 3em;
+  }
+  .wikiText {
+    top: 30%;
+    left: 10%;
+    right: 20%;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
 }
