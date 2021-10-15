@@ -22,7 +22,7 @@ h1 {
   color: goldenrod;
   text-shadow: -2px -2px 3px black;
   font-size: 450%;
-  position: absolute;
+  position: fixed;
   top: 10%;
   left: 15%;
   z-index: 5
@@ -31,8 +31,20 @@ h3 {
   color: beige;
   font-size: 130%;
   position: absolute;
-  top: 70%;
+  top: 50%;
+  z-index: 5
+}
+.wikiText {
+  position: absolute;
+  top: 30%;
   left: 5%;
   right: 30%;
-  z-index: 5
+  bottom: 0;
+  overflow: scroll;
+  -ms-overflow-style: none;   /* delete scrollbar for Internet Explorer, Edge */
+  scrollbar-width: none;      /* delete scrollbar for Firefox */
+  overflow-y: scroll;         /* delete scrollbar for Firefox */
+}
+element::-webkit-scrollbar {
+    display: none;            /* delete scrollbar for Chrome, Safari, and Opera */
 }
