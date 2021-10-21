@@ -53,6 +53,9 @@ h1 {
   bottom: 80px;
   left: 30px;
 }
+.menu ul li a {
+  text-decoration: none;
+}
 .menuButton {
   position: fixed;
   width: 20px;
