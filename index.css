@@ -58,17 +58,17 @@ element::-webkit-scrollbar {
 @media(max-width: 950px) {
   h1 {
     top: 5%;
-    left: 10%;
+    left: 5%;
     right: 5%;
-    font-size: 3em;
+    font-size: 4em;
   }
   .wikiText {
-    top: 30%;
-    left: 10%;
-    right: 20%;
+    top: 35%;
+    left: 5%;
+    right: 30%;
   }
   p {
-    font-size: 1.1em;
+    font-size: 1em;
     top: 50%;
   }
 }
