@@ -2,12 +2,13 @@ body {
   background-color: black;
   padding: 0;
   margin: 0;
+  font-family: 'Prompt', sans-serif;
 }
 iframe {
   position: fixed;
   top: 0;
-  left: 0;
-  object-fit: cover;
+  left: 50%;
+  transform: translate(-50%);
   z-index: 1
 }
 .screenFilter {
@@ -24,34 +25,37 @@ h1 {
   font-size: 4.5em;
   position: fixed;
   top: 10%;
-  left: 10%;
+  left: 5%;
   z-index: 5
 }
-h3 {
+p {
   margin: 0;
   padding: 0;
   color: beige;
   font-size: 1.3em;
   line-height: 1.2em;
   position: absolute;
-  top: 70%;
+  top: 50%;
   z-index: 5
+}
+a {
+  color: beige;
 }
 .wikiText {
   position: absolute;
   top: 45%;
-  left: 10%;
+  left: 5%;
   right: 30%;
   bottom: 0;
   overflow: scroll;
-  -ms-overflow-style: none;   /* delete scrollbar for Internet Explorer, Edge */
-  scrollbar-width: none;      /* delete scrollbar for Firefox */
-  overflow-y: scroll;         /* delete scrollbar for Firefox */
+  -ms-overflow-style: none;   /* delete scrollbar on the side for Internet Explorer, Edge */
+  scrollbar-width: none;      /* delete scrollbar on the side for Firefox */
+  overflow-y: scroll;         /* delete scrollbar on the side for Firefox */
 }
 element::-webkit-scrollbar {
-    display: none;            /* delete scrollbar for Chrome, Safari, and Opera */
+    display: none;            /* delete scrollbar on the side for Chrome, Safari, and Opera */
 }
-@media(max-width: 991px) {
+@media(max-width: 950px) {
   h1 {
     top: 5%;
     left: 10%;
@@ -63,7 +67,7 @@ element::-webkit-scrollbar {
     left: 10%;
     right: 20%;
   }
-  h3 {
+  p {
     font-size: 1.1em;
     top: 50%;
   }
