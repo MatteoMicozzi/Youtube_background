@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: black;
   padding: 0;
@@ -28,9 +32,41 @@ h1 {
   left: 5%;
   z-index: 5
 }
+.menuPortion {
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  z-index: 5;
+  width: 20%;
+  height: 100%;
+  right: -20%;
+}
+.menuPortion.open {
+  right: 0;  
+}
+.menu {
+  position: absolute;
+  bottom: 15%;
+  overflow: hidden;
+  left: 8%;
+}
+.menuButton {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-image: url("./img/menu.png");
+  background-size: cover;
+  cursor: pointer;
+  bottom: 5%;
+  right: 2.5%;
+  z-index: 6;
+}
+.menuButton.open {
+  background-image: url("./img/x.png");
+}
 p {
-  margin: 0;
-  padding: 0;
   color: beige;
   font-size: 1.3em;
   line-height: 1.2em;
@@ -39,7 +75,7 @@ p {
   z-index: 5
 }
 a {
-  color: beige;
+  color: goldenrod;
 }
 .wikiText {
   position: absolute;
