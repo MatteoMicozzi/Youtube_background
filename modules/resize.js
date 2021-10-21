@@ -1,6 +1,6 @@
 const ratioWidth = 16;
 const ratioHeight = 9;
-var iframeElement = document.querySelector('iframe');
+const iframeElement = document.querySelector('iframe');
 var windowWidth;
 var windowHeight;
 
