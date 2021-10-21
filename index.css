@@ -43,7 +43,7 @@ a {
 }
 .wikiText {
   position: absolute;
-  top: 45%;
+  top: 50%;
   left: 5%;
   right: 30%;
   bottom: 0;
@@ -69,6 +69,23 @@ element::-webkit-scrollbar {
   }
   p {
     font-size: 1em;
+    top: 50%;
+  }
+}
+@media(max-width: 550px) {
+  h1 {
+    top: 3%;
+    left: 8%;
+    right: 8%;
+    font-size: 3em;
+  }
+  .wikiText {
+    top: 25%;
+    left: 8%;
+    right: 30%;
+  }
+  p {
+    font-size: 0.9em;
     top: 50%;
   }
 }
