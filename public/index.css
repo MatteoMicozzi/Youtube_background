@@ -50,10 +50,21 @@ h1 {
 }
 .menu {
   position: absolute;
-  bottom: 80px;
+  overflow: scroll;
+  top: 30px;
   left: 30px;
+  bottom: 30px;
 }
-.menu ul li a {
+.innerMenu {
+  height:100%;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+  bottom: 0;
+  left: 0;
+}
+.menu .innerMenu a {
   text-decoration: none;
 }
 .menuButton {
